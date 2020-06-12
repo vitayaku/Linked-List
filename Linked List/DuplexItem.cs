@@ -11,5 +11,15 @@ namespace Linked_List
         public DuplexItem<T> Previous { get; set; }
 
         public DuplexItem<T> Next { get; set; }
+
+        public DuplexItem(T data)
+        {
+            Data = data;
+        }
+
+        public override string ToString()
+        {
+            return Data.ToString();
+        }
     }
 }
